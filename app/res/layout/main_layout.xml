@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Section for C++ part -->
+    <FrameLayout
+        android:id="@+id/of_gl_surface_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!-- C++ rendering or views go here -->
+    </FrameLayout>
+
+    <!-- Section for Java part -->
+    <FrameLayout
+        android:id="@+id/java_section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!-- Java related views go here -->
+    </FrameLayout>
+
+</LinearLayout>

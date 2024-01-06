@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+def ofRoot = '../../../'
+ofRoot = file(ofRoot).absolutePath
+
+rootProject.name = "androidFontExample"
+include ':app'
+include ':ofAndroidLib'
+project(':ofAndroidLib').projectDir = new File(ofRoot+'/addons/ofxAndroid/ofAndroidLib')

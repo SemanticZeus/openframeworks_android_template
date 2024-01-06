@@ -1,0 +1,19 @@
+#macOS system files
+.DS_Store
+
+# IDE settings
+.idea/
+
+# Gradle files
+.gradle/
+app/.gradle/
+
+# Local configuration files
+local.properties
+app/local.properties
+
+# Build output
+app/build/
+app/bin/
+
+local.properties
